@@ -1,3 +1,7 @@
+# v1.3.0
+
+2026-10-13: Added pricing immediately after the subscription rescue mission: basic website NZ$1,500 + GST; basic text/image updates NZ$50 + GST; larger redesigns or changes quoted. Replaced the pricing FAQ and update FAQ to match. Rising-cost animation ends in a large red X with a no-ongoing-website-subscription message, resets on replay and displays its final state with reduced motion. Replaced the four origin-story tiles with supplied transparent graphic-novel panels, optimised as high-quality WebP, with accessible enlargement. Preserves existing approved artwork and portfolio concepts.
+
 # v1.2.1
 
 2026-10-13: Prepared SuperWebsitesNZ/SWdemo1 as the independent Super Websites source repository. Split HTML, styles and interaction code into maintainable versioned files; bundled all optimised transparent artwork, self-hosted fonts, favicon and touch icon. Preserves the approved v1.2.0 appearance and interactions. Browser-only brief builder; no enquiries are sent.

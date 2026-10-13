@@ -1,4 +1,4 @@
-# Super Websites v1.2.1
+# Super Websites v1.3.0
 
 The purple-and-gold Super Websites demo, maintained in **SuperWebsitesNZ/SWdemo1**.
 
@@ -23,9 +23,13 @@ Connect this repository as a static site with no framework and no build command.
 ## Files
 
 - `index.html`: page structure and copy.
-- `styles-v1.2.1.css`: brand, layouts and responsive styles.
-- `app-v1.2.1.js`: navigation, cost animation, concept previews and brief builder.
+- `styles-v1.3.0.css`: brand, layouts and responsive styles.
+- `app-v1.3.0.js`: navigation, cost animation, concept previews and brief builder.
 - `assets/`: compressed graphics, fonts and favicons.
 - `VERSION.md`: version notes.
 
 Super Websites projects use the **SuperWebsitesNZ** GitHub account. Think Blue Tree projects use **TBT-APP**.
+
+## Pricing
+
+Basic website: NZ$1,500 + GST. Basic text/image changes: NZ$50 + GST. Larger redesigns and changes are quoted. Domain renewals and optional services remain separate.
