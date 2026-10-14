@@ -1,6 +1,6 @@
-# Super Websites v1.4.2
+# Super Websites v1.4.3
 
-The Super Websites demo maintained in **SuperWebsitesNZ/SWdemo1**. v1.4.2 keeps the combined layout and button-to-form animation, with Patrick's three updated transparent character images and floating motion. **SWdemo2 is read-only for this work.**
+The Super Websites demo maintained in **SuperWebsitesNZ/SWdemo1**. v1.4.3 adds a chain-break intro to the combined layout, button-to-form animation and updated floating character images. **SWdemo2 is read-only for this work.**
 
 - Static website; no installation or build step.
 - Open `index.html` locally, or serve the repository root with a static server.
@@ -14,6 +14,7 @@ The Super Websites demo maintained in **SuperWebsitesNZ/SWdemo1**. v1.4.2 keeps 
 If GitHub Pages is configured for `main` / repository root:
 
 - Latest: https://superwebsitesnz.github.io/SWdemo1/
+- v1.4.3 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.3/
 - v1.4.2 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.2/
 - v1.4.1 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.1/
 - v1.4.0 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.0/
@@ -26,8 +27,8 @@ The footer links directly to the snapshots. These are expected deployment addres
 ## Files
 
 - `index.html`: latest page structure and content.
-- `styles-v1.4.2.css`: portrait artwork layout, violet background, Barlow typography, yellow buttons, responsive layout and floating character artwork.
-- `app-v1.4.2.js`: button-to-form spin morph, cost animation, replay, motion pause, navigation and brief builder.
+- `styles-v1.4.3.css`: chain-break intro, portrait artwork layout, violet background, Barlow typography, yellow buttons, responsive layout and floating character artwork.
+- `app-v1.4.3.js`: button-to-form spin morph, cost animation, replay, motion pause, navigation and brief builder.
 - All prior versioned CSS/JavaScript and snapshots are retained unchanged.
 - `assets/`: new v1.4.2 character WebPs, preserved earlier artwork/favicons and portfolio screenshots.
 - `versions/`: stable HTML snapshots.
@@ -97,3 +98,15 @@ Patrick supplied three new transparent character images. Hero1 (female with lapt
 Task branch: `codex/v1.4.2`. Added three compressed WebP assets preserving source dimensions and alpha exactly, new versioned CSS/JavaScript, a v1.4.2 snapshot, current index updates and version notes. Portrait frames and the closing artwork aspect ratio were adjusted for the new image shapes. Existing floating motion and the button-to-form spin are retained. JavaScript behavior is identical to v1.4.1, apart from version/header comments.
 
 Validation: original-to-WebP dimension/alpha checks; HTML/image/asset/version/fragment mappings; CSS layering and responsive rules; JS syntax and unchanged-behavior comparison; immutable prior assets/snapshots. Rendered browser QA was unavailable. Demo2 and original uploaded PNG files were not modified.
+
+
+
+### Codex handover — v1.4.3 — 2026-10-14
+
+Patrick requested DC's page-opening chain break in Demo1, with improvements where useful. Read SWdemo2 at `937eedb` as reference only. Added a richer gold chain, central snap/star and detached link fragments, then smooth outward reveal over about 1.8 seconds. It runs once per tab session; “Replay intro” in the footer plays it again. No changes to Demo2.
+
+The intro uses a closed native dialog plus a small early inline script, so JavaScript-disabled or failed-script visits stay visible. It supports click/Skip and Escape, native modal keyboard handling, reduced-motion bypass/changes, a 2.3-second safety timeout, background-tab dismissal and page-cache restoration. Deep-link visits skip the automatic intro, and its session key is namespaced to Demo1 so Demo2 cannot suppress it. Blocked sessionStorage is optional and never traps the page. Replay respects Pause motion/reduced motion.
+
+Task branch: `codex/v1.4.3`. Changed current index, added new versioned CSS/JS and a v1.4.3 snapshot, and updated version notes. Current artwork files and all earlier snapshots remain unchanged. The existing cost animation pauses while the intro is open and resumes on reveal/replay completion, so its animation is not consumed behind the opening screen. Existing form and navigation behavior is unchanged.
+
+Validation: intro event/lifecycle execution covering initial/repeat/storage/replay/skip/Escape/timeout/background/cache/deep-link/reduced-motion/failure paths; existing app syntax and unchanged-behavior comparison; markup/asset/version/fragment links; stylesheet/SVG structure; preservation of older snapshots/artwork. Browser-rendered QA unavailable.
