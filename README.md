@@ -1,6 +1,6 @@
-# Super Websites v1.4.1
+# Super Websites v1.4.2
 
-The Super Websites demo maintained in **SuperWebsitesNZ/SWdemo1**. v1.4.0 combines the requested SWdemo2 content and typography with Demo 1's original transparent flying superhero artwork and motion. **SWdemo2 is read-only for this work.**
+The Super Websites demo maintained in **SuperWebsitesNZ/SWdemo1**. v1.4.2 keeps the combined layout and button-to-form animation, with Patrick's three updated transparent character images and floating motion. **SWdemo2 is read-only for this work.**
 
 - Static website; no installation or build step.
 - Open `index.html` locally, or serve the repository root with a static server.
@@ -14,6 +14,7 @@ The Super Websites demo maintained in **SuperWebsitesNZ/SWdemo1**. v1.4.0 combin
 If GitHub Pages is configured for `main` / repository root:
 
 - Latest: https://superwebsitesnz.github.io/SWdemo1/
+- v1.4.2 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.2/
 - v1.4.1 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.1/
 - v1.4.0 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.0/
 - v1.3.0 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.3.0/
@@ -25,10 +26,10 @@ The footer links directly to the snapshots. These are expected deployment addres
 ## Files
 
 - `index.html`: latest page structure and content.
-- `styles-v1.4.1.css`: violet background, Barlow typography, yellow buttons, responsive layout and flying artwork.
-- `app-v1.4.1.js`: button-to-form spin morph, cost animation, replay, motion pause, navigation and brief builder.
-- v1.3.0 and v1.4.0 CSS/JavaScript are retained unchanged for their snapshots.
-- `assets/`: original SWdemo1 artwork and favicons; portfolio screenshots copied from SWdemo2.
+- `styles-v1.4.2.css`: portrait artwork layout, violet background, Barlow typography, yellow buttons, responsive layout and floating character artwork.
+- `app-v1.4.2.js`: button-to-form spin morph, cost animation, replay, motion pause, navigation and brief builder.
+- All prior versioned CSS/JavaScript and snapshots are retained unchanged.
+- `assets/`: new v1.4.2 character WebPs, preserved earlier artwork/favicons and portfolio screenshots.
 - `versions/`: stable HTML snapshots.
 - `VERSION.md`: version history.
 
@@ -86,3 +87,13 @@ Patrick requested that a form-opening button grow and spin into the form. Each `
 Task branch: `codex/v1.4.1`. Changed the current index, added `styles-v1.4.1.css` / `app-v1.4.1.js`, updated version notes and added `versions/v1.4.1/index.html`. Existing v1.4.0/v1.3.0 snapshots, source files and artwork stay immutable. Demo 2 was not read or changed for this task.
 
 The form opens directly when reduced motion is enabled, site motion is paused or Web Animations is unavailable. Closing/Escape, viewport resize, reduced-motion changes and animation failures clean up the morph immediately. Native modal focus behavior and the existing brief/copy flow are retained. Validation covered these animation paths, the mobile capture order, existing cost/brief interactions, syntax and version/asset links. Rendered browser QA was unavailable in this environment.
+
+
+
+### Codex handover — v1.4.2 — 2026-10-14
+
+Patrick supplied three new transparent character images. Hero1 (female with laptop) now appears at the top, Hero2 (male offering key) in “Your website. Your keys.” and Hero3 (victory pair) in the closing section. The top image is above the panel/background rays (z-index 2), behind the ownership box (z-index 4), and can extend beyond the panel. Removed only the faint background shield; the small shield in the ownership box remains.
+
+Task branch: `codex/v1.4.2`. Added three compressed WebP assets preserving source dimensions and alpha exactly, new versioned CSS/JavaScript, a v1.4.2 snapshot, current index updates and version notes. Portrait frames and the closing artwork aspect ratio were adjusted for the new image shapes. Existing floating motion and the button-to-form spin are retained. JavaScript behavior is identical to v1.4.1, apart from version/header comments.
+
+Validation: original-to-WebP dimension/alpha checks; HTML/image/asset/version/fragment mappings; CSS layering and responsive rules; JS syntax and unchanged-behavior comparison; immutable prior assets/snapshots. Rendered browser QA was unavailable. Demo2 and original uploaded PNG files were not modified.
