@@ -1,10 +1,10 @@
-# Super Websites v1.5.1
+# Super Websites v1.5.2
 
 Launch preparation for **SuperWebsitesNZ/SWdemo1**. The current GitHub Pages site remains a noindex review preview while production is built separately with the final domain and enquiry details. SWdemo2 and Think Blue Tree were not changed.
 
 - Latest preview: https://superwebsitesnz.github.io/SWdemo1/
-- Current snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.5.1/
-- Previous snapshots: `versions/v1.3.0/` through `versions/v1.5.0/`, retained unchanged.
+- Current snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.5.2/
+- Previous snapshots: `versions/v1.3.0/` through `versions/v1.5.1/`, retained unchanged.
 - Static HTML/CSS/JavaScript with a dependency-free Node builder; no browser framework or npm dependencies.
 - Shared layouts and an unpublished About entry and a visible Blog prepare for future pages. No training offers are promoted. The Blog includes one short article and three clearly labelled preview-only sample titles.
 - Responsive WebP artwork, subset self-hosted Barlow fonts, local icons, social metadata, custom 404 and separate preview/production SEO rules.
@@ -13,7 +13,7 @@ Launch preparation for **SuperWebsitesNZ/SWdemo1**. The current GitHub Pages sit
 
 ## Source and commands
 
-Read [LAUNCH-v1.5.1.md](LAUNCH-v1.5.1.md) for domain/hosting setup, contact configuration, page/blog publishing, privacy and final live checks.
+Read [LAUNCH-v1.5.2.md](LAUNCH-v1.5.2.md) for domain/hosting setup, contact configuration, page/blog publishing, privacy and final live checks.
 
 ```sh
 npm run build
@@ -27,8 +27,8 @@ Node 20+; no installation needed. `npm run build:preview` updates generated root
 - `src/layout.html`, `src/partials/`: shared document, header, footer, intro and enquiry dialog.
 - `content/pages.json`, `content/posts.json`: reviewed, explicitly published page/post configuration.
 - `site.config.json`: site title, description, final/preview URL, public enquiry email/endpoint.
-- `scripts/*-v1.5.1.mjs`: builder, output validation and local/mock tests.
-- `styles-v1.5.1.css`, `app-v1.5.1.js`, `enquiry-v1.5.1.js`: current presentation/interactions.
+- `scripts/*-v1.5.2.mjs`: builder, output validation and build tests (enquiry and cost-animation tests stay at v1.5.1, their JS is unchanged).
+- `styles-v1.5.2.css`, `app-v1.5.1.js`, `enquiry-v1.5.1.js`: current presentation/interactions.
 - `assets/`: local artwork, icons and licensed fonts.
 - `index.html`, `404.html`, `robots.txt`, `_headers`: generated preview output.
 - `VERSION.md`: website history.
