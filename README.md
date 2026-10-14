@@ -1,19 +1,19 @@
-# Super Websites v1.5.0
+# Super Websites v1.5.1
 
 Launch preparation for **SuperWebsitesNZ/SWdemo1**. The current GitHub Pages site remains a noindex review preview while production is built separately with the final domain and enquiry details. SWdemo2 and Think Blue Tree were not changed.
 
 - Latest preview: https://superwebsitesnz.github.io/SWdemo1/
-- Current snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.5.0/
-- Previous snapshots: `versions/v1.3.0/` through `versions/v1.4.3/`, retained unchanged.
+- Current snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.5.1/
+- Previous snapshots: `versions/v1.3.0/` through `versions/v1.5.0/`, retained unchanged.
 - Static HTML/CSS/JavaScript with a dependency-free Node builder; no browser framework or npm dependencies.
-- Shared layouts and unpublished About/Blog entries prepare for future pages. No training offers are promoted.
+- Shared layouts and an unpublished About entry and a visible Blog prepare for future pages. No training offers are promoted. The Blog includes one short article and three clearly labelled preview-only sample titles.
 - Responsive WebP artwork, subset self-hosted Barlow fonts, local icons, social metadata, custom 404 and separate preview/production SEO rules.
 - Configurable enquiry endpoint or email-draft fallback. Neither receiver is configured yet; the preview only prepares/copies a brief.
 - Current pricing and five-year illustrative cost comparison are preserved. The unfinished third portfolio tile was removed.
 
 ## Source and commands
 
-Read [LAUNCH-v1.5.0.md](LAUNCH-v1.5.0.md) for domain/hosting setup, contact configuration, page/blog publishing, privacy and final live checks.
+Read [LAUNCH-v1.5.1.md](LAUNCH-v1.5.1.md) for domain/hosting setup, contact configuration, page/blog publishing, privacy and final live checks.
 
 ```sh
 npm run build
@@ -27,15 +27,23 @@ Node 20+; no installation needed. `npm run build:preview` updates generated root
 - `src/layout.html`, `src/partials/`: shared document, header, footer, intro and enquiry dialog.
 - `content/pages.json`, `content/posts.json`: reviewed, explicitly published page/post configuration.
 - `site.config.json`: site title, description, final/preview URL, public enquiry email/endpoint.
-- `scripts/*-v1.5.0.mjs`: builder, output validation and local/mock tests.
-- `styles-v1.5.0.css`, `app-v1.5.0.js`, `enquiry-v1.5.0.js`: current presentation/interactions.
+- `scripts/*-v1.5.1.mjs`: builder, output validation and local/mock tests.
+- `styles-v1.5.1.css`, `app-v1.5.1.js`, `enquiry-v1.5.1.js`: current presentation/interactions.
 - `assets/`: local artwork, icons and licensed fonts.
 - `index.html`, `404.html`, `robots.txt`, `_headers`: generated preview output.
 - `VERSION.md`: website history.
 
 **Preserve previous versions:** retain old snapshots and referenced versioned assets unchanged. Create a new version for new code. Edit shared source, rebuild, and commit generated and source files together. Production excludes archive pages. Cloudflare applies `_headers`; GitHub Pages ignores it.
 
-## Current release handover — Codex — 2026-10-14
+## Current release handover — Codex — 2026-10-15
+
+Patrick requested a more compact form, a visible blog listing and article example, and cost animation playback only when the graph is being viewed. Task branch: `codex/v1.5.1-blog-form`. Added `cost-animation-v1.5.1.js` with measured graph visibility (65% of its visible viewport capacity, excluding the sticky header) and a pausable timeline. Playback waits on entry and stops while offscreen, tab-hidden, intro/form/menu-covered or globally paused; returning resumes remaining time. Reduced motion displays final totals. The observer stays attached, with passive scroll/resize geometry checks for header/viewport changes and fallback support.
+
+Made the form wider and more compact, separated its close bar from the body scroll area and locked background scrolling while open. Added the Blog navigation link, purple/gold featured article layout, one short article and three non-clickable sample-title cards. Sample titles are preview-only, with no fake pages or production sitemap entries. Added a return link, brand byline and enquiry CTA to the article. Fixed the shared header's SVG arrow to reference local icons on nested pages. Domain and enquiry configuration remain unset; the whole demo stays noindex. No training offers were added.
+
+Validation: output metadata/IDs/assets/fragments/module paths; mock enquiry tests; controlled chart timing and visibility tests; preview/production blog routing and sample-card exclusion. Browser-rendered QA was unavailable. The supplied screenshot was readable and informed the modal changes. All earlier snapshots/assets retained unchanged. Current code, builder, checks and notes use v1.5.1.
+
+## Previous release handover — Codex — 2026-10-14
 
 Patrick authorised sensible preparation for a future domain launch, with About/Blog and more pages to come. Task branch: `codex/v1.5.0-launch-prep`. Added the multipage static build, SEO/share metadata, launch gates, responsive artwork/font optimisation and configurable enquiry flow. Kept Dave's future content/AI training promotion unpublished and retained the existing design/animations. The public contact email/domain were not inferred from account details.
 
