@@ -1,3 +1,7 @@
+# v1.4.3
+
+2026-10-14: Added a DC-inspired chain-break page-opening animation, with gradient gold links, a clearer central snap, detached link pieces and smoother outward reveal. Plays once per tab session with footer replay, click/Skip and Escape. Closed native dialog is fail-open without JavaScript; reduced motion, deep links, paused motion, missing dialog support and hidden tabs bypass it. Added safety timeout, optional namespaced session storage and background/page-cache cleanup. Current artwork and existing form/chart interactions are preserved. Added a v1.4.3 snapshot and updated version links. Demo2 read only and unchanged.
+
 # v1.4.2
 
 2026-10-14: Replaced character artwork with the three supplied transparent images: Hero1 with laptop in the hero, Hero2 offering the key in ownership, and Hero3 victory pair in the closing section. Compressed to WebP while retaining original dimensions and exact alpha. Adjusted portrait frames and closing aspect ratio; retained floating motion. Hero1 renders in front of its panel/background rays and behind the ownership box. Removed the faint background shield. Preserved the button-to-form spin and all interaction behavior. Added a stable v1.4.2 snapshot and updated version links; all previous files/snapshots remain unchanged. No changes to Demo2 or uploaded originals.
@@ -29,6 +33,7 @@
 # v1.0.0
 
 2026-10-13: Initial Super Websites visual concept. Original shield and lightning identity, ivory/ink/lime/lilac palette, responsive editorial layout, subscription calculator, three illustrative design concepts, accessible navigation, project brief builder, reduced-motion support. No real client claims, fixed pricing or enquiry backend. Private design review release.
+
 
 
 
