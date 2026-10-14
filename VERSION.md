@@ -1,3 +1,7 @@
+# v1.4.2
+
+2026-10-14: Replaced character artwork with the three supplied transparent images: Hero1 with laptop in the hero, Hero2 offering the key in ownership, and Hero3 victory pair in the closing section. Compressed to WebP while retaining original dimensions and exact alpha. Adjusted portrait frames and closing aspect ratio; retained floating motion. Hero1 renders in front of its panel/background rays and behind the ownership box. Removed the faint background shield. Preserved the button-to-form spin and all interaction behavior. Added a stable v1.4.2 snapshot and updated version links; all previous files/snapshots remain unchanged. No changes to Demo2 or uploaded originals.
+
 # v1.4.1
 
 2026-10-14: Added a button-to-form opening animation to every brief CTA. The clicked button's rectangle expands and spins through a full turn into the actual modal over 720ms; yellow becomes white and the form content fades in towards the end. Uses capture-phase measurement for mobile navigation and transform-based Web Animations. Reduced-motion, paused-motion and unsupported-animation paths open directly. Closing/Escape, resize, preference changes and failures clear temporary animation state. Preserved existing form/copy and chart behavior, all v1.4.0/v1.3.0 files/assets and previous snapshots. Added a stable v1.4.1 snapshot and version links. No changes to Demo 2.
@@ -25,5 +29,6 @@
 # v1.0.0
 
 2026-10-13: Initial Super Websites visual concept. Original shield and lightning identity, ivory/ink/lime/lilac palette, responsive editorial layout, subscription calculator, three illustrative design concepts, accessible navigation, project brief builder, reduced-motion support. No real client claims, fixed pricing or enquiry backend. Private design review release.
+
 
 
