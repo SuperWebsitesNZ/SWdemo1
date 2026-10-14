@@ -1,3 +1,7 @@
+# v1.4.0
+
+2026-10-14: Blended the requested SWdemo2 styling/content into SWdemo1 only. Adopted pale violet #F4EEFE, Barlow/Barlow Condensed typography and yellow comic-style buttons. Updated hero to “Super sites. No subscriptions.” Retained original transparent flying superheroes and the original closing section. Replaced the subscription section with the yellow “Break the subscription cycle” panel and two-series five-year comparison; both totals and all ten bars animate together, with replay, pause/resume, background-tab handling and reduced-motion support. Copied ownership, package pricing ($1,500 one-page / $2,500 up to five pages / $50 updates, all + GST) and portfolio sections. Combined both FAQs. Removed all above-heading labels, yellow ticker and four-step/comic chapter section. Kept the brief builder browser-only. Added stable v1.3.0 and v1.4.0 HTML snapshots and footer links; preserved old versioned CSS/JS/assets. Demo2 was read only and was not modified. Third portfolio tile still awaits Patrick's project.
+
 # v1.3.0
 
 2026-10-13: Added pricing immediately after the subscription rescue mission: basic website NZ$1,500 + GST; basic text/image updates NZ$50 + GST; larger redesigns or changes quoted. Replaced the pricing FAQ and update FAQ to match. Rising-cost animation ends in a large red X with a no-ongoing-website-subscription message, resets on replay and displays its final state with reduced motion. Replaced the four origin-story tiles with supplied transparent graphic-novel panels, optimised as high-quality WebP, with accessible enlargement. Preserves existing approved artwork and portfolio concepts.
@@ -17,3 +21,4 @@
 # v1.0.0
 
 2026-10-13: Initial Super Websites visual concept. Original shield and lightning identity, ivory/ink/lime/lilac palette, responsive editorial layout, subscription calculator, three illustrative design concepts, accessible navigation, project brief builder, reduced-motion support. No real client claims, fixed pricing or enquiry backend. Private design review release.
+
