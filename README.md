@@ -1,50 +1,45 @@
-# Super Websites v1.4.3
+# Super Websites v1.5.0
 
-The Super Websites demo maintained in **SuperWebsitesNZ/SWdemo1**. v1.4.3 adds a chain-break intro to the combined layout, button-to-form animation and updated floating character images. **SWdemo2 is read-only for this work.**
+Launch preparation for **SuperWebsitesNZ/SWdemo1**. The current GitHub Pages site remains a noindex review preview while production is built separately with the final domain and enquiry details. SWdemo2 and Think Blue Tree were not changed.
 
-- Static website; no installation or build step.
-- Open `index.html` locally, or serve the repository root with a static server.
-- Images, versioned CSS/JavaScript and favicons are local. Barlow / Barlow Condensed use Google Fonts, with system-font fallbacks.
-- The brief builder prepares copyable text locally. It does not send enquiries or store them on a server.
-- The cost comparison animates a shared five-year timeline: NZ$79/month example agency care plan (NZ$4,740) versus four NZ$50 updates/year (NZ$1,000). Build prices and domain renewals are separate. The example is not a quote from an agency or an independently verified market average.
-- Removed all small labels above headings, the yellow ticker and the four-step/chapter section.
+- Latest preview: https://superwebsitesnz.github.io/SWdemo1/
+- Current snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.5.0/
+- Previous snapshots: `versions/v1.3.0/` through `versions/v1.4.3/`, retained unchanged.
+- Static HTML/CSS/JavaScript with a dependency-free Node builder; no browser framework or npm dependencies.
+- Shared layouts and unpublished About/Blog entries prepare for future pages. No training offers are promoted.
+- Responsive WebP artwork, subset self-hosted Barlow fonts, local icons, social metadata, custom 404 and separate preview/production SEO rules.
+- Configurable enquiry endpoint or email-draft fallback. Neither receiver is configured yet; the preview only prepares/copies a brief.
+- Current pricing and five-year illustrative cost comparison are preserved. The unfinished third portfolio tile was removed.
 
-## Demo and previous versions
+## Source and commands
 
-If GitHub Pages is configured for `main` / repository root:
+Read [LAUNCH-v1.5.0.md](LAUNCH-v1.5.0.md) for domain/hosting setup, contact configuration, page/blog publishing, privacy and final live checks.
 
-- Latest: https://superwebsitesnz.github.io/SWdemo1/
-- v1.4.3 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.3/
-- v1.4.2 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.2/
-- v1.4.1 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.1/
-- v1.4.0 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.0/
-- v1.3.0 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.3.0/
+```sh
+npm run build
+npm run check
+npm test
+```
 
-The footer links directly to the snapshots. These are expected deployment addresses, not confirmation of deployment. Git history and the `versions/v1.3.0` branch also preserve the earlier source.
+Node 20+; no installation needed. `npm run build:preview` updates generated root demo files. `npm run build:production` creates the isolated `site-dist/` deployment and refuses to proceed without a final HTTPS domain and a contact method. The production host must publish `site-dist/`, not the repository root. JavaScript modules require HTTP hosting; opening HTML via `file://` is not supported.
 
-**Preserve previous versions:** before changing an existing version, save its HTML in `versions/<version>/index.html`, adjusting local asset/CSS/JS paths for that directory. Retain its referenced versioned files and assets unchanged. Use a new version number for new code. Keep existing snapshot files immutable.
+- `src/home.html`: home content.
+- `src/layout.html`, `src/partials/`: shared document, header, footer, intro and enquiry dialog.
+- `content/pages.json`, `content/posts.json`: reviewed, explicitly published page/post configuration.
+- `site.config.json`: site title, description, final/preview URL, public enquiry email/endpoint.
+- `scripts/*-v1.5.0.mjs`: builder, output validation and local/mock tests.
+- `styles-v1.5.0.css`, `app-v1.5.0.js`, `enquiry-v1.5.0.js`: current presentation/interactions.
+- `assets/`: local artwork, icons and licensed fonts.
+- `index.html`, `404.html`, `robots.txt`, `_headers`: generated preview output.
+- `VERSION.md`: website history.
 
-## Files
+**Preserve previous versions:** retain old snapshots and referenced versioned assets unchanged. Create a new version for new code. Edit shared source, rebuild, and commit generated and source files together. Production excludes archive pages. Cloudflare applies `_headers`; GitHub Pages ignores it.
 
-- `index.html`: latest page structure and content.
-- `styles-v1.4.3.css`: chain-break intro, portrait artwork layout, violet background, Barlow typography, yellow buttons, responsive layout and floating character artwork.
-- `app-v1.4.3.js`: button-to-form spin morph, cost animation, replay, motion pause, navigation and brief builder.
-- All prior versioned CSS/JavaScript and snapshots are retained unchanged.
-- `assets/`: new v1.4.2 character WebPs, preserved earlier artwork/favicons and portfolio screenshots.
-- `versions/`: stable HTML snapshots.
-- `VERSION.md`: version history.
+## Current release handover — Codex — 2026-10-14
 
-## Cloudflare
+Patrick authorised sensible preparation for a future domain launch, with About/Blog and more pages to come. Task branch: `codex/v1.5.0-launch-prep`. Added the multipage static build, SEO/share metadata, launch gates, responsive artwork/font optimisation and configurable enquiry flow. Kept Dave's future content/AI training promotion unpublished and retained the existing design/animations. The public contact email/domain were not inferred from account details.
 
-Connect this repository as a static site with no framework or build command. Publish the repository root. Client production hosting can be configured separately from this demo.
-
-## Pricing and remaining work
-
-As requested for this design, the page now shows SWdemo2's package section: one-page NZ$1,500 + GST; up-to-five-page NZ$2,500 + GST; basic updates NZ$50 + GST. Larger work is quoted. The copied inclusions describe the intended service, while this demo's form remains browser-only.
-
-The third portfolio tile remains a placeholder pending Patrick's selected site/screenshot. Real enquiry delivery and any optional paid integrations still need separate implementation. The two existing portfolio screenshots were copied from SWdemo2 without changing that repository.
-
-Super Websites uses **SuperWebsitesNZ**. Think Blue Tree uses **TBT-APP**.
+Checks: JavaScript syntax, preview/production fixture builds, missing asset/fragment and duplicate ID checks, image integrity, mocked enquiry success/failure/timeout handling, draft exclusion, nested blog/page routes, canonical/schema/sitemap and output-folder protection. Browser-rendered QA, real-domain speed measurement and real enquiry delivery remain to be checked on the chosen host. No real enquiry was sent during tests. Older files and collaboration notes below are historical and may describe superseded behavior.
 
 ## Codex and DC collaboration — notes v1.0.0
 

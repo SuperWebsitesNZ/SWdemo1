@@ -1,3 +1,7 @@
+# v1.5.0
+
+2026-10-14: Prepared SWdemo1 for a future production launch while keeping the GitHub Pages demo noindex. Added dependency-free shared layouts and explicit publishing configuration for About, Blog, posts and future pages. Unpublished entries are omitted from generated navigation/routes/sitemaps; no content/AI training offers are promoted. Production requires a final HTTPS business domain and configured enquiry receiver, emits canonical/social/structured metadata, sitemap, robots and custom 404, and excludes archived demo pages. Added Cloudflare security/caching headers; GitHub Pages does not apply them. Responsive hero/logo variants and licensed subset self-hosted Barlow fonts reduce image/font payloads and remove Google Fonts requests. Added configurable JSON enquiry submission with receipt/error/timeout handling and email-draft fallback, preserving local brief/copy behavior when unconfigured. Added name/email fields, honeypot, shared-page chart guards, versioned source/build/check/test files and launch instructions. Removed the unfinished third portfolio tile and duplicate skip link; made hero service wording clearer and softened the service-page Google claim. Current pricing, cost comparison, chain-break intro, button morph and floating artwork are preserved. Final domain, public contact receiver, DNS and real-host verification remain unset. No real enquiries sent. Existing snapshots and original assets remain unchanged.
+
 # v1.4.3
 
 2026-10-14: Added a DC-inspired chain-break page-opening animation, with gradient gold links, a clearer central snap, detached link pieces and smoother outward reveal. Plays once per tab session with footer replay, click/Skip and Escape. Closed native dialog is fail-open without JavaScript; reduced motion, deep links, paused motion, missing dialog support and hidden tabs bypass it. Added safety timeout, optional namespaced session storage and background/page-cache cleanup. Current artwork and existing form/chart interactions are preserved. Added a v1.4.3 snapshot and updated version links. Demo2 read only and unchanged.
@@ -33,6 +37,7 @@
 # v1.0.0
 
 2026-10-13: Initial Super Websites visual concept. Original shield and lightning identity, ivory/ink/lime/lilac palette, responsive editorial layout, subscription calculator, three illustrative design concepts, accessible navigation, project brief builder, reduced-motion support. No real client claims, fixed pricing or enquiry backend. Private design review release.
+
 
 
 
