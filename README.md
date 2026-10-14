@@ -1,38 +1,47 @@
-# Super Websites v1.3.0
+# Super Websites v1.4.0
 
-The purple-and-gold Super Websites demo, maintained in **SuperWebsitesNZ/SWdemo1**.
+The Super Websites demo maintained in **SuperWebsitesNZ/SWdemo1**. v1.4.0 combines the requested SWdemo2 content and typography with Demo 1's original transparent flying superhero artwork and motion. **SWdemo2 is read-only for this work.**
 
-- Static website: no install step, no build command, no paid website platform needed.
-- Open `index.html` locally, or serve this directory with a static web server.
-- All images, fonts, styles and scripts are included. No external asset links.
-- The brief form prepares copyable text in the browser. It does not send enquiries or store information on a server.
-- The NZ$30/month graph is an illustrative other-platform cost, not our build price or a quote for a Wix/Squarespace plan.
+- Static website; no installation or build step.
+- Open `index.html` locally, or serve the repository root with a static server.
+- Images, versioned CSS/JavaScript and favicons are local. Barlow / Barlow Condensed use Google Fonts, with system-font fallbacks.
+- The brief builder prepares copyable text locally. It does not send enquiries or store them on a server.
+- The cost comparison animates a shared five-year timeline: NZ$79/month example agency care plan (NZ$4,740) versus four NZ$50 updates/year (NZ$1,000). Build prices and domain renewals are separate. The example is not a quote from an agency or an independently verified market average.
+- Removed all small labels above headings, the yellow ticker and the four-step/chapter section.
 
-## GitHub Pages demo
+## Demo and previous versions
 
-In this repository, open **Settings → Pages**. Under **Build and deployment**, select **Deploy from a branch**, select **main** and **/(root)**, then save. Once GitHub finishes deploying, the demo URL is:
+If GitHub Pages is configured for `main` / repository root:
 
-https://superwebsitesnz.github.io/SWdemo1/
+- Latest: https://superwebsitesnz.github.io/SWdemo1/
+- v1.4.0 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.0/
+- v1.3.0 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.3.0/
 
-This is the expected address, not confirmation that Pages has been enabled.
+The footer links directly to the snapshots. These are expected deployment addresses, not confirmation of deployment. Git history and the `versions/v1.3.0` branch also preserve the earlier source.
 
-## Cloudflare
-
-Connect this repository as a static site with no framework and no build command. Publish the repository root. The client-facing production site can be configured separately from this demo.
+**Preserve previous versions:** before changing an existing version, save its HTML in `versions/<version>/index.html`, adjusting local asset/CSS/JS paths for that directory. Retain its referenced versioned files and assets unchanged. Use a new version number for new code. Keep existing snapshot files immutable.
 
 ## Files
 
-- `index.html`: page structure and copy.
-- `styles-v1.3.0.css`: brand, layouts and responsive styles.
-- `app-v1.3.0.js`: navigation, cost animation, concept previews and brief builder.
-- `assets/`: compressed graphics, fonts and favicons.
-- `VERSION.md`: version notes.
+- `index.html`: latest page structure and content.
+- `styles-v1.4.0.css`: violet background, Barlow typography, yellow buttons, responsive layout and flying artwork.
+- `app-v1.4.0.js`: cost animation, replay, motion pause, navigation and brief builder.
+- `styles-v1.3.0.css` / `app-v1.3.0.js`: retained for the previous version.
+- `assets/`: original SWdemo1 artwork and favicons; portfolio screenshots copied from SWdemo2.
+- `versions/`: stable HTML snapshots.
+- `VERSION.md`: version history.
 
-Super Websites projects use the **SuperWebsitesNZ** GitHub account. Think Blue Tree projects use **TBT-APP**.
+## Cloudflare
 
-## Pricing
+Connect this repository as a static site with no framework or build command. Publish the repository root. Client production hosting can be configured separately from this demo.
 
-Basic website: NZ$1,500 + GST. Basic text/image changes: NZ$50 + GST. Larger redesigns and changes are quoted. Domain renewals and optional services remain separate.
+## Pricing and remaining work
+
+As requested for this design, the page now shows SWdemo2's package section: one-page NZ$1,500 + GST; up-to-five-page NZ$2,500 + GST; basic updates NZ$50 + GST. Larger work is quoted. The copied inclusions describe the intended service, while this demo's form remains browser-only.
+
+The third portfolio tile remains a placeholder pending Patrick's selected site/screenshot. Real enquiry delivery and any optional paid integrations still need separate implementation. The two existing portfolio screenshots were copied from SWdemo2 without changing that repository.
+
+Super Websites uses **SuperWebsitesNZ**. Think Blue Tree uses **TBT-APP**.
 
 ## Codex and DC collaboration — notes v1.0.0
 
@@ -55,3 +64,14 @@ Reviewed website v1.3.0 at commit `5083749`: static HTML, separate versioned CSS
 Source checks found no missing local HTML assets, missing fragment targets or duplicate IDs. Responsive and reduced-motion code is present. This was a source review, not a fresh visual/browser test or a verified production deployment.
 
 No website source or assets changed in this review. Useful next discussions: preferred direction across the two demos, final superhero identity, real enquiry delivery, and final commercial scope. This repo has no enquiry backend.
+
+
+### Codex handover — v1.4.0 — 2026-10-14
+
+Patrick explicitly requested a blend in **SWdemo1 only**: Dave's pale violet background, Barlow typography and yellow buttons; hero copy/headline; rent/cost-comparison section; ownership; full pricing; portfolio; and a combined FAQ. Kept Demo 1's original transparent superhero artwork, flying motion and closing section. Removed above-heading labels, ticker and all steps/chapters. Do not modify SWdemo2 as part of this change.
+
+Task branch: `codex/v1.4.0`. Changes: `index.html`, new `styles-v1.4.0.css` and `app-v1.4.0.js`, two portfolio screenshots, `README.md`, `VERSION.md`, and stable HTML snapshots under `versions/v1.3.0/` and `versions/v1.4.0/`. Existing v1.3.0 CSS, JavaScript and artwork are retained unchanged. The v1.3.0 source is also saved on `versions/v1.3.0`.
+
+Validation: JavaScript syntax; HTML structure/IDs/local references/internal links; CSS syntax structure; image integrity; execution of actual app code with controlled DOM/time events covering both totals, all ten bars, replay, pause/resume, background-tab resume, reduced motion, observer fallback, menu and brief/copy behavior. Browser rendering QA was unavailable in this environment; inspect the deployed desktop/mobile layouts when available.
+
+The five-year comparison has a replay button and shares one timeline across both series. Both totals render fully without JavaScript or under reduced motion. Existing copyable-brief behavior is preserved. Remaining product work: third portfolio project and production enquiry delivery. Future edits must preserve the immutable snapshots and use fresh versioned files.
