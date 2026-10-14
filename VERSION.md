@@ -1,3 +1,7 @@
+# v1.4.1
+
+2026-10-14: Added a button-to-form opening animation to every brief CTA. The clicked button's rectangle expands and spins through a full turn into the actual modal over 720ms; yellow becomes white and the form content fades in towards the end. Uses capture-phase measurement for mobile navigation and transform-based Web Animations. Reduced-motion, paused-motion and unsupported-animation paths open directly. Closing/Escape, resize, preference changes and failures clear temporary animation state. Preserved existing form/copy and chart behavior, all v1.4.0/v1.3.0 files/assets and previous snapshots. Added a stable v1.4.1 snapshot and version links. No changes to Demo 2.
+
 # v1.4.0
 
 2026-10-14: Blended the requested SWdemo2 styling/content into SWdemo1 only. Adopted pale violet #F4EEFE, Barlow/Barlow Condensed typography and yellow comic-style buttons. Updated hero to “Super sites. No subscriptions.” Retained original transparent flying superheroes and the original closing section. Replaced the subscription section with the yellow “Break the subscription cycle” panel and two-series five-year comparison; both totals and all ten bars animate together, with replay, pause/resume, background-tab handling and reduced-motion support. Copied ownership, package pricing ($1,500 one-page / $2,500 up to five pages / $50 updates, all + GST) and portfolio sections. Combined both FAQs. Removed all above-heading labels, yellow ticker and four-step/comic chapter section. Kept the brief builder browser-only. Added stable v1.3.0 and v1.4.0 HTML snapshots and footer links; preserved old versioned CSS/JS/assets. Demo2 was read only and was not modified. Third portfolio tile still awaits Patrick's project.
@@ -21,4 +25,5 @@
 # v1.0.0
 
 2026-10-13: Initial Super Websites visual concept. Original shield and lightning identity, ivory/ink/lime/lilac palette, responsive editorial layout, subscription calculator, three illustrative design concepts, accessible navigation, project brief builder, reduced-motion support. No real client claims, fixed pricing or enquiry backend. Private design review release.
+
 

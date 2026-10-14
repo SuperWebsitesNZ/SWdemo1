@@ -1,4 +1,4 @@
-# Super Websites v1.4.0
+# Super Websites v1.4.1
 
 The Super Websites demo maintained in **SuperWebsitesNZ/SWdemo1**. v1.4.0 combines the requested SWdemo2 content and typography with Demo 1's original transparent flying superhero artwork and motion. **SWdemo2 is read-only for this work.**
 
@@ -14,6 +14,7 @@ The Super Websites demo maintained in **SuperWebsitesNZ/SWdemo1**. v1.4.0 combin
 If GitHub Pages is configured for `main` / repository root:
 
 - Latest: https://superwebsitesnz.github.io/SWdemo1/
+- v1.4.1 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.1/
 - v1.4.0 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.4.0/
 - v1.3.0 snapshot: https://superwebsitesnz.github.io/SWdemo1/versions/v1.3.0/
 
@@ -24,9 +25,9 @@ The footer links directly to the snapshots. These are expected deployment addres
 ## Files
 
 - `index.html`: latest page structure and content.
-- `styles-v1.4.0.css`: violet background, Barlow typography, yellow buttons, responsive layout and flying artwork.
-- `app-v1.4.0.js`: cost animation, replay, motion pause, navigation and brief builder.
-- `styles-v1.3.0.css` / `app-v1.3.0.js`: retained for the previous version.
+- `styles-v1.4.1.css`: violet background, Barlow typography, yellow buttons, responsive layout and flying artwork.
+- `app-v1.4.1.js`: button-to-form spin morph, cost animation, replay, motion pause, navigation and brief builder.
+- v1.3.0 and v1.4.0 CSS/JavaScript are retained unchanged for their snapshots.
 - `assets/`: original SWdemo1 artwork and favicons; portfolio screenshots copied from SWdemo2.
 - `versions/`: stable HTML snapshots.
 - `VERSION.md`: version history.
@@ -75,3 +76,13 @@ Task branch: `codex/v1.4.0`. Changes: `index.html`, new `styles-v1.4.0.css` and 
 Validation: JavaScript syntax; HTML structure/IDs/local references/internal links; CSS syntax structure; image integrity; execution of actual app code with controlled DOM/time events covering both totals, all ten bars, replay, pause/resume, background-tab resume, reduced motion, observer fallback, menu and brief/copy behavior. Browser rendering QA was unavailable in this environment; inspect the deployed desktop/mobile layouts when available.
 
 The five-year comparison has a replay button and shares one timeline across both series. Both totals render fully without JavaScript or under reduced motion. Existing copyable-brief behavior is preserved. Remaining product work: third portfolio project and production enquiry delivery. Future edits must preserve the immutable snapshots and use fresh versioned files.
+
+
+
+### Codex handover — v1.4.1 — 2026-10-14
+
+Patrick requested that a form-opening button grow and spin into the form. Each `[data-brief]` button now opens the actual modal from its measured on-screen rectangle, expands through one turn and settles at full size over 720ms. The yellow button surface changes to the white form, with contents revealed towards the end. It measures in the capture phase so the mobile navigation button still has its position before the menu closes.
+
+Task branch: `codex/v1.4.1`. Changed the current index, added `styles-v1.4.1.css` / `app-v1.4.1.js`, updated version notes and added `versions/v1.4.1/index.html`. Existing v1.4.0/v1.3.0 snapshots, source files and artwork stay immutable. Demo 2 was not read or changed for this task.
+
+The form opens directly when reduced motion is enabled, site motion is paused or Web Animations is unavailable. Closing/Escape, viewport resize, reduced-motion changes and animation failures clean up the morph immediately. Native modal focus behavior and the existing brief/copy flow are retained. Validation covered these animation paths, the mobile capture order, existing cost/brief interactions, syntax and version/asset links. Rendered browser QA was unavailable in this environment.
